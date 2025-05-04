@@ -11,7 +11,7 @@
 ## Установка скрипта:
 
 1. Установите **[Tampermonkey](https://www.tampermonkey.net/)** (или другой менеджер пользовательских скриптов на ваш выбор).
-2. **[Установите скрипт]([https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon(KSBfP)/master/kemono-search-button.user.js](https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/refs/heads/main/Kemono%20Search%20Button%20for%20Patreon(KSBfP).js))**.
+2. **[Установите скрипт](https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/refs/heads/main/Kemono%20Search%20Button%20for%20Patreon(KSBfP).js)**.
 
 ## Функции:
 
