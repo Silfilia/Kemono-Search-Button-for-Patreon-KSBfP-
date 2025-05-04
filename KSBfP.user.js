@@ -2,7 +2,7 @@
 // @name             Kemono Search Button for Patreon
 // @name:ru          Kemono Кнопка Поиска Для Patreon
 // @namespace        https://github.com/Silfilia
-// @version          1.0.1
+// @version          1.0.0
 // @description      Patreon author search button on Kemono
 // @description:ru   Кнопка поиска автора Patreon на Kemono
 // @author           Silfilia
