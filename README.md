@@ -21,7 +21,7 @@
 
 ## Полезные ссылки:
 
-1. **Репозиторий скрипта:** [Ссылка]([https://github.com/yourusername/kemono-search-button](https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-))
+1. **Репозиторий скрипта:** [Ссылка](https://github.com/yourusername/kemono-search-button](https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-)
 
 ## Как настроить стиль кнопки:
 
