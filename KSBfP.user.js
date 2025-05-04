@@ -1,12 +1,16 @@
 // ==UserScript==
-// @name         Kemono Search Button for Patreon
-// @version      1.0.0
-// @description  Patreon author search button on Kemono.su
-// @author       Silfilia
-// @homepageURL  https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-
-// @downloadURL  https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/raw/refs/heads/main/KSBfP.user.js
-// @updateURL    https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/raw/refs/heads/main/KSBfP.user.js
-// @match        https://www.patreon.com/*
+// @name             Kemono Search Button for Patreon
+// @name:ru          Kemono Кнопка Поиска Для Patreon
+// @namespace        https://github.com/Silfilia
+// @version          1.0.0
+// @description      Patreon author search button on Kemono
+// @description:ru   Кнопка поиска автора Patreon на Kemono
+// @author           Silfilia
+// @homepageURL      https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-
+// @downloadURL      https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/raw/refs/heads/main/KSBfP.user.js
+// @updateURL        https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/raw/refs/heads/main/KSBfP.user.js
+// @match            https://www.patreon.com/*
+// @license          https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/refs/heads/main/LICENSE
 // ==/UserScript==
 
 (function () {
