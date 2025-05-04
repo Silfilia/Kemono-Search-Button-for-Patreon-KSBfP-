@@ -21,7 +21,7 @@ This script adds a search button on Patreon author pages that leads to the autho
 
 ## Useful Links:
 
-1. **Script repository:** [Link](https://github.com/yourusername/kemono-search-button)
+1. **Script repository:** [Link]([https://github.com/yourusername/kemono-search-button](https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-))
 
 ## Customizing Button Style:
 
