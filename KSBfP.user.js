@@ -19,6 +19,7 @@
     function createKemonoButton(authorName) {
         if (document.querySelector('#kemono-search-button')) return;
 
+        // Remove all spaces from the author's name
         const safeName = authorName.replace(/\s+/g, '');
 
         const button = document.createElement('a');
@@ -36,6 +37,7 @@
         button.style.borderRadius = '10px';
         button.style.zIndex = '9999';
         button.style.color = '#FFF';
+        button.style.textcolor = 'rgb(255, 255, 255)';
         button.style.fontWeight = 'bold';
         button.style.textDecoration = 'none';
         button.style.transition = 'background 0.3s';
@@ -45,15 +47,22 @@
         document.body.appendChild(button);
     }
 
-    function getAuthorNameFromURL() {
-        const path = window.location.pathname;
-        const match = path.match(/^\/([^\/?#]+)/);
-        return match ? match[1] : null;
+    function getAuthorName() {
+        // Standard author's title
+        const header = document.querySelector('h1#pageheader-title');
+        if (header && header.textContent.trim()) return header.textContent.trim();
+
+        // Alternative selectors
+        const altHeader = document.querySelector('div[data-tag="creator-name"]') ||
+                          document.querySelector('h1[class*="sc-"]');
+        if (altHeader && altHeader.textContent.trim()) return altHeader.textContent.trim();
+
+        return null;
     }
 
-    function waitForPageAndInsertButton() {
+    function waitForAuthorAndInsertButton() {
         const observer = new MutationObserver(() => {
-            const authorName = getAuthorNameFromURL();
+            const authorName = getAuthorName();
             if (authorName) {
                 createKemonoButton(authorName);
                 observer.disconnect();
@@ -63,5 +72,5 @@
         observer.observe(document.body, { childList: true, subtree: true });
     }
 
-    waitForPageAndInsertButton();
+    waitForAuthorAndInsertButton();
 })();
