@@ -2,7 +2,7 @@
 // @name             Kemono Search Button for Patreon
 // @name:ru          Kemono Кнопка Поиска Для Patreon
 // @namespace        https://github.com/Silfilia
-// @version          1.0.0
+// @version          1.0.1
 // @description      Patreon author search button on Kemono
 // @description:ru   Кнопка поиска автора Patreon на Kemono
 // @author           Silfilia
@@ -10,7 +10,7 @@
 // @downloadURL      https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/raw/refs/heads/main/KSBfP.user.js
 // @updateURL        https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/raw/refs/heads/main/KSBfP.user.js
 // @match            https://www.patreon.com/*
-// @license          https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/refs/heads/main/LICENSE
+// @license          MIT
 // ==/UserScript==
 
 (function () {
@@ -19,7 +19,6 @@
     function createKemonoButton(authorName) {
         if (document.querySelector('#kemono-search-button')) return;
 
-        // Remove all spaces from the author's name
         const safeName = authorName.replace(/\s+/g, '');
 
         const button = document.createElement('a');
@@ -37,7 +36,6 @@
         button.style.borderRadius = '10px';
         button.style.zIndex = '9999';
         button.style.color = '#FFF';
-        button.style.textcolor = 'rgb(255, 255, 255)';
         button.style.fontWeight = 'bold';
         button.style.textDecoration = 'none';
         button.style.transition = 'background 0.3s';
@@ -47,22 +45,15 @@
         document.body.appendChild(button);
     }
 
-    function getAuthorName() {
-        // Standard author's title
-        const header = document.querySelector('h1#pageheader-title');
-        if (header && header.textContent.trim()) return header.textContent.trim();
-
-        // Alternative selectors
-        const altHeader = document.querySelector('div[data-tag="creator-name"]') ||
-                          document.querySelector('h1[class*="sc-"]');
-        if (altHeader && altHeader.textContent.trim()) return altHeader.textContent.trim();
-
-        return null;
+    function getAuthorNameFromURL() {
+        const path = window.location.pathname;
+        const match = path.match(/^\/([^\/?#]+)/);
+        return match ? match[1] : null;
     }
 
-    function waitForAuthorAndInsertButton() {
+    function waitForPageAndInsertButton() {
         const observer = new MutationObserver(() => {
-            const authorName = getAuthorName();
+            const authorName = getAuthorNameFromURL();
             if (authorName) {
                 createKemonoButton(authorName);
                 observer.disconnect();
@@ -72,5 +63,5 @@
         observer.observe(document.body, { childList: true, subtree: true });
     }
 
-    waitForAuthorAndInsertButton();
+    waitForPageAndInsertButton();
 })();
