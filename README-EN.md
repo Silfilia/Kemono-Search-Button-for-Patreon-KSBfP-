@@ -11,7 +11,7 @@ This script adds a search button on Patreon author pages that leads to the autho
 ## Installing the Script:
 
 1. Install **[Tampermonkey](https://www.tampermonkey.net/)** (or another user script manager of your choice) | (An alternative for Safari: **[UserScripts](https://apps.apple.com/app/userscripts/id1463298887)**)
-2. **[«Install the Script»](https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/refs/heads/main/Kemono.Search.Button.for.Patreon(KSBfP).js)**
+2. **[«Install the Script»](https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/raw/refs/heads/main/KSBfP.user.js)**
 
 ## Features:
 
