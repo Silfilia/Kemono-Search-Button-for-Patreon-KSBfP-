@@ -4,8 +4,8 @@
 // @description  Patreon author search button on Kemono.su
 // @author       Silfilia
 // @homepageURL  https://github.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-
-// @downloadURL  https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/refs/heads/main/Kemono.Search.Button.for.Patreon(KSBfP).js
-// @updateURL    https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/refs/heads/main/Kemono.Search.Button.for.Patreon(KSBfP).js
+// @downloadURL  https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/refs/heads/main/KSBfP.js
+// @updateURL    https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/refs/heads/main/KSBfP.js
 // @match        https://www.patreon.com/*
 // ==/UserScript==
 
