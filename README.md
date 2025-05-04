@@ -10,8 +10,8 @@
 
 ## Установка скрипта:
 
-1. Установите **[Tampermonkey](https://www.tampermonkey.net/)** (или другой менеджер пользовательских скриптов на ваш выбор).
-2. **[Установите скрипт](https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/refs/heads/main/Kemono%20Search%20Button%20for%20Patreon(KSBfP).js)**.
+1. Установите **[Tampermonkey](https://www.tampermonkey.net/)** (или другой менеджер пользовательских скриптов на ваш выбор) (Альтернатива для Safari: **[UserScripts](https://apps.apple.com/app/userscripts/id1463298887)**).
+2. **[«Установите Скрипт»](https://raw.githubusercontent.com/Silfilia/Kemono-Search-Button-for-Patreon-KSBfP-/refs/heads/main/Kemono%20Search%20Button%20for%20Patreon(KSBfP).js)**
 
 ## Функции:
 
